@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.marrs.ischool.MainActivity">
+
+    <item android:id="@+id/sobre"
+        android:icon="@android:drawable/ic_popup_sync"        
+        android:title="Sobre o Ischool"  
+        app:showAsAction="never"
+     />
+    
+    <item android:id="@+id/ajuda"
+        android:icon="@android:drawable/ic_popup_sync"        
+        android:title="Ajuda"
+        app:showAsAction="never" />    
+
+
+</menu>

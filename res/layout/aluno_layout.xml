@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aluno_container"
+    android:tag="AlunoFragment" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+
+    <ProgressBar
+            android:id="@+id/progress_aluno"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone" />
+    
+
+    <LinearLayout
+        android:id="@+id/layout_aluno_erro"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#a9aab8"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/trocar_aluno"
+            android:src="@drawable/icon_nuvem_erro" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/erro_carregar_agenda"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView  android:divider="#dadce0"
+        android:dividerHeight="1dp"
+        android:id="@+id/lv_aluno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

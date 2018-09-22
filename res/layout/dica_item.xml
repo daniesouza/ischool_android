@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+        
+        <TextView
+	        android:id="@+id/tv_titulo_dica"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Large Text"
+	        android:padding="10dp"
+	        android:textColor="#ADADAD"
+	        android:textStyle="bold"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/tv_texto_dica"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:textColor="#ADADAD"
+	        android:text="TextView" />
+	
+	    <TextView
+	        android:id="@+id/tv_data_dica"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="40dp"
+	        android:padding="5dp"
+	        android:text="TextView" 
+	        android:textColor="#ADADAD"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+    </LinearLayout>
+
+</LinearLayout>

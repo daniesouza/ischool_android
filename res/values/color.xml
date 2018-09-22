@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#FFF</color>
+    <color name="list_background">#242424</color>
+    <color name="list_background_pressed">#4b4646</color>
+    <color name="list_divider">#242424</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="status_bar_color">#b89e69</color>
+    <color name="evento_canc_color">#9cabb8</color>
+    
+    <color name="card_lembrete_title">#78d1ab</color>
+    <color name="cinza_lembrete_button">#a09f9f</color>
+     
+    <color name="balao_professor">#466bfe</color>
+    <color name="balao_pai">#8ee1da</color>
+     
+     
+    <color name="branco_card">#FFFFFF</color>
+    <color name="orange">#FF9900</color>
+    <color name="orange_claro">#ffcc66</color>
+ 	<color name="green">#009900</color>
+    <color name="blue">#000099</color>
+   
+    
+    
+    <color name="progressLaranja">#ff8226</color>
+    <color name="progressVerde">#66cc00</color>
+    
+    <color name="background_tab_pressed">#6633B5E5</color>
+    
+     	<item name="transparent" type="color">#00FFFFFF</item>
+    <item name="grey" type="color">#555555</item>
+    <item name="greenc" type="color">#4499CC00</item>
+    <item name="darkgreen" type="color">#FF669900</item> 
+    
+
+</resources>

@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/br.com.marrs.ischool"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<br.com.marrs.ischool.view.PagerSlidingTabStrip
+    android:id="@+id/tabs"
+    android:layout_width="match_parent"
+    android:layout_height="50dip" 
+    android:background="@drawable/actionbar"
+    app:pstsShouldExpand="true"
+    app:pstsIndicatorHeight="4dip"
+    app:pstsUnderlineColor="#00000000"
+    app:pstsDividerPadding="2dip"/>
+
+<!--  <<br.com.marrs.ischool.view.PagerSlidingTabStrip -->
+<!--     android:id="@+id/tabs" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="62dip" -->
+<!--     android:layout_below="@+id/image" -->
+<!--     android:background="@drawable/background_tabs_diagonal" -->
+<!--     app:pstsDividerColor="#00000000" -->
+<!--     app:pstsIndicatorColor="#FF33B5E6" -->
+<!--     app:pstsTabPaddingLeftRight="14dip" -->
+<!--     app:pstsUnderlineColor="#FF33B5E6" /> -->
+
+<android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+</LinearLayout>

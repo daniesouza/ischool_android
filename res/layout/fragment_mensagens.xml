@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:tag="mensagemFragment"
+    android:id="@+id/mensagem_container">
+    
+    
+    <LinearLayout
+        android:id="@+id/layout_mensagem_erro"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#a9aab8"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/trocar_aluno"
+            android:src="@drawable/icon_nuvem_erro" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/erro_carregar_agenda"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout> 
+    
+    <LinearLayout
+        android:layout_below="@+id/layout_mensagem_erro"
+        android:id="@+id/layout_aluno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#efefef" >
+        
+	    <ImageView
+	        android:id="@+id/iv_aluno_icon"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:padding="3dp"
+	        android:layout_gravity="center_vertical"
+	        android:contentDescription="@string/toque_detalhes"
+	        android:src="@drawable/icon_filho_no_pic"
+	        android:background="?android:selectableItemBackground"
+	        android:scaleType="fitXY" />        
+
+        <TextView
+            android:id="@+id/aluno_select_nome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textColor="#007aff"
+            android:text="@string/aguarde"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/progress_mensagens"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone" />
+    </LinearLayout>
+    
+ 	<View  android:layout_width="match_parent" android:layout_below="@+id/layout_aluno" android:id="@+id/nome_divider"  android:layout_height="1dp"   android:background="#dadce0" />    
+  
+      
+    <ListView android:layout_below="@+id/nome_divider"
+            android:id="@+id/lv_mensagens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:paddingBottom="60dp"
+            android:divider="@null"/>
+    
+    <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff">
+                
+            <EditText 
+                    android:id="@+id/texto_mensagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:hint="Escreva aqui sua mensagem"
+                    android:imeOptions="actionDone"
+                    android:textColor="#000"
+                    android:layout_toLeftOf="@+id/ib_envia_mensagem">
+                    
+<!--        		 <requestFocus /> -->
+                     
+             </EditText>
+                
+            <ImageButton
+                    android:id="@+id/ib_envia_mensagem"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitCenter"
+                    android:focusable="true"
+					android:background="?android:selectableItemBackground"    
+		            android:src="@drawable/icon_send_message" />
+            
+    </RelativeLayout>
+
+
+</RelativeLayout>

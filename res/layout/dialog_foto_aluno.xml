@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout android:divider="#dadce0"
+        android:dividerHeight="2dp"
+        android:id="@+id/ll_item_maquina"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_maquina_icon"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/toque_detalhes"
+            android:src="@drawable/icon_maquina_foto" />
+        
+	     <TextView 
+            android:id="@+id/tv_tirar_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"                
+            android:layout_weight="10"
+            android:text="TIRAR FOTO"
+            android:textColor="#c5c5c5"
+            android:textSize="20sp"/>        
+    
+     </LinearLayout>
+     
+    <View  android:layout_width="match_parent"  android:layout_height="1dp"   android:background="#dadce0" />
+     
+    <LinearLayout
+        android:id="@+id/ll_item_galeria"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_galeria_icon"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/toque_detalhes"
+            android:src="@drawable/icon_galeria_foto" />
+        
+	     <TextView 
+            android:id="@+id/tv_escolher_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"                
+            android:text="ESCOLHER NA GALERIA"
+            android:layout_weight="10"
+            android:textColor="#c5c5c5"
+            android:textSize="20sp"/>        
+    
+     </LinearLayout>    
+    
+
+</LinearLayout>

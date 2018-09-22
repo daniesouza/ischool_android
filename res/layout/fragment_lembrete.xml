@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lembrete_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical"
+    android:tag="LembreteFragment" >
+
+    <LinearLayout
+        android:id="@+id/layout_lembrete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff" >
+        
+	    <ImageView
+	        android:id="@+id/iv_aluno_icon"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:padding="3dp"
+	        android:layout_gravity="center_vertical"
+	        android:contentDescription="@string/toque_detalhes"
+	        android:src="@drawable/icon_filho_no_pic"
+	        android:background="?android:selectableItemBackground"
+	        android:scaleType="fitXY" />           
+
+        <TextView
+            android:id="@+id/aluno_select_nome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textColor="#007aff"
+            android:text="@string/aguarde"
+            android:textSize="20sp" />
+        
+	    <Button  
+	         android:id="@+id/botao_data_lembrete" 
+	         android:layout_width="43dp"
+	         android:layout_marginRight="10dp"
+           	 android:layout_height="43dp"
+			 android:background="@drawable/icon_trocar_data"
+   	         android:contentDescription="@string/toque_detalhes"  	         
+   	         android:visibility="visible"/>            
+
+        <ProgressBar
+            android:id="@+id/progress_agenda"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone" />
+    </LinearLayout>
+    
+ 	<View  android:layout_width="match_parent"  android:layout_height="1dp"   android:background="#dadce0" />    
+
+    <LinearLayout
+        android:id="@+id/layout_agenda_erro"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#a9aab8"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/trocar_aluno"
+            android:src="@drawable/icon_nuvem_erro" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/erro_carregar_agenda"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lv_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#dadce0"
+        android:dividerHeight="1dp" />
+    
+
+</LinearLayout>

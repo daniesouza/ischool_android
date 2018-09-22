@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.marrs.ischool.MainActivity">
+
+    <item android:id="@+id/action_settings" 
+        android:icon="@drawable/icon_clipe"
+        android:title="Enviar"        
+        app:showAsAction="ifRoom">
+      
+        <menu>
+		    <item android:id="@+id/menu_galeria"
+		        android:icon="@drawable/icon_galeria"
+		        android:title="Galeria"
+		        />
+		    <item android:id="@+id/menu_audio"
+		        android:icon="@drawable/icon_audio"
+		        android:title="Enviar Audio"
+		        />		    
+		    <item android:id="@+id/menu_foto"
+		        android:icon="@drawable/icon_camera"
+		        android:title="Tirar Foto"
+		        />	
+		        
+		    <item android:id="@+id/menu_video"
+		        android:icon="@drawable/icon_video"
+		        android:title="Gravar Video"
+		        />		    	    
+        </menu>
+      
+      
+     </item>   
+
+
+</menu>

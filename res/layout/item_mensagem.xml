@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="5dp"
+    android:background="#efefef"
+    android:id="@+id/tv_layout">
+    
+    <TextView
+        android:id="@+id/nome_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c5c5c5"
+        android:textSize="14sp" 
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+        
+    <LinearLayout android:orientation="horizontal"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content">        
+       
+       <LinearLayout android:orientation="horizontal"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/mensagem_balao">    
+        		
+	       <ImageView  
+		         android:id="@+id/icon_file" 
+		         android:layout_width="40dp"
+	           	 android:layout_height="40dp"
+	   	         android:layout_gravity="center_vertical"
+	   	         android:src="@drawable/icon_file"
+	   	         android:paddingLeft="5dp"	   	         
+	   	         android:paddingRight="3dp"
+	   	         android:contentDescription="@string/toque_detalhes"  	         
+	   	         android:visibility="gone"/>           
+        
+	       <TextView
+		        android:id="@+id/mensagem_text"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:textSize="15sp" 
+		        android:padding="15dp"
+		        android:visibility="gone"/>
+	       
+	       <TextView
+		        android:id="@+id/mensagem_text_arquivo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:textSize="15sp" 
+		        android:maxWidth="190dp"
+		        android:visibility="gone"/>	       
+	       
+	       <ImageView  
+		         android:id="@+id/abrir_download" 
+		         android:layout_width="80dp"
+	           	 android:layout_height="80dp"
+	   	         android:layout_gravity="center_vertical"
+	   	         android:src="@drawable/icon_informacoes"
+	   	         android:paddingLeft="5dp"		        	   	         
+	   	         android:paddingRight="10dp"
+	   	         android:contentDescription="@string/toque_detalhes"  	         
+	   	         android:visibility="gone"/>	       
+	       
+	       <TextView  
+		         android:id="@+id/nuvem" 
+		         android:layout_width="70dp"
+	           	 android:layout_height="65dp"
+	   	         android:layout_gravity="center_vertical"
+	   	         android:background="@drawable/icon_download"
+	   	         android:singleLine="true"
+	   	         android:gravity="center"
+	   	         android:paddingBottom="5dp"
+	   	         android:textColor="@android:color/white"
+	   	         android:contentDescription="@string/toque_detalhes"  	         
+	   	         android:visibility="gone"/>
+	              
+	       
+	        <br.com.marrs.ischool.model.CircularProgressBar
+	            android:id="@+id/circularprogressbar"
+	            style="@style/Widget.ProgressBar.CircularProgressBar"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:paddingRight="10dp"
+	            android:layout_gravity="center_vertical" 
+	            android:visibility="gone"/>	             
+     
+       </LinearLayout>
+    
+    <ProgressBar
+            android:id="@+id/progress_msgEnvio"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="gone" /> 
+    </LinearLayout>
+   
+     
+    
+</LinearLayout>

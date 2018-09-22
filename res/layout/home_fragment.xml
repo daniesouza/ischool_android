@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="HomeFragment"
+    android:id="@+id/home_container"
+    android:background="@drawable/tab_aluno_bg">
+
+       
+        <ProgressBar android:id="@+id/progess_home"
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center_vertical|center_horizontal" />     
+            
+        
+         <LinearLayout 
+            android:id="@+id/layout_home"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+	           	
+	                
+	            <TextView 
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:text="HELLO WORLD"
+	                android:textStyle="bold"
+	                android:textSize="20sp"
+	                android:gravity="center_vertical"
+	                android:padding="10dp"
+	                android:layout_weight="3" 
+	                android:layout_gravity="center_horizontal|center_vertical"/>  
+         </LinearLayout>         
+            
+         <LinearLayout 
+            android:id="@+id/layout_home_erro"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#a9aab8"
+            android:orientation="horizontal">
+	           	
+	            <ImageView 
+	                android:layout_marginLeft="20dp"
+                	android:contentDescription="@string/trocar_aluno"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/icon_nuvem_erro"
+	                android:layout_weight="1"
+	                android:layout_gravity="center_horizontal|center_vertical"/>  
+	                
+	            <TextView 
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:text="@string/erro_carregar_agenda"
+	                android:textStyle="bold"
+	                android:textSize="20sp"
+	                android:gravity="center_vertical"
+	                android:padding="10dp"
+	                android:layout_weight="3" 
+	                android:layout_gravity="center_horizontal"/>	                      		             
+         </LinearLayout>    
+         
+         
+
+</FrameLayout>

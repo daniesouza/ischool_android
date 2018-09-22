@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="LOGIN"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/field_login"
+            android:ems="10"
+            android:hint="Digite seu usuário"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000"
+            android:textColorHint="#CCC" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/field_login"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000"
+            android:textColorHint="#CCC" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#40C5CF"
+            android:text="Entrar"
+            android:onClick="login" />
+
+        <CheckBox
+            android:id="@+id/cb_gravar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Logar automaticamente"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+    <FrameLayout
+	        android:id="@+id/progress_login"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#AA000000"
+	        android:clickable="true"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"
+	        android:visibility="gone" >
+	
+	        <ProgressBar
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:focusable="true"
+	            android:focusableInTouchMode="true"
+	            android:layout_gravity="center" />
+    </FrameLayout>
+
+</FrameLayout>
